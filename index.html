@@ -1,41 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>FloorPlanner</title>
-<link rel="stylesheet" href="/css/bootstrap.css" type='text/css' />
-<link rel="stylesheet" href="/css/bootstrap-colorpicker.css" type='text/css' />
-<link rel="stylesheet" href="/css/bootstrap-theme.css" type='text/css' />
-<script src="/js/jquery-2.1.1.js"></script>
-<script src="/js/fabric.js"></script>
-<script src="/js/bootstrap.js"></script>
-<script src="/js/bootstrap-colorpicker.js"></script>
-<script src="/js/coffee-script.js"></script>
-<script src="/js/floorplanner.coffee" type="text/coffeescript"></script>
-<style>
-#tools {
-  border-bottom: 1px solid black;
-  width: 100%;
-}
-#work {
-  width: 100%;
-}
 
-</style>
+<head>
+    <meta charset="utf-8">
+    <title>Webpack Boilerplate</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body>
-<div id="tools">
-<div id="shapes">
-<button class="btn btn-default" id="undo">Undo</button>
-<button class="btn btn-default" id="redo">Redo</button>
-<button class="btn btn-danger" id="clear">Clear</button>
-<button class="btn btn-danger" id="clearall">Clear All</button>
-<button class="btn btn-success" id="save">Save</button>
-</div>
-<div id="properties"></div>
-</div>
-<div id="work">
-<canvas id="c"></canvas>
-</div>
+
+    <div id="app"></div>
+
+    <p class="hint">Press <i>space</i> key to toggle walls</p>
+    <script src="build/bundle.js"></script>
 </body>
 </html>
